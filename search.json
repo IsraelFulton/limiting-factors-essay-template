@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "notebooks/analysis.html",
+    "href": "notebooks/analysis.html",
+    "title": "Analysis Notebook",
+    "section": "",
+    "text": "import pandas as pd\nprint(\"Load, transform, analyze — then write outputs to ./figures and ./data/processed.\")\n\nLoad, transform, analyze — then write outputs to ./figures and ./data/processed."
+  },
+  {
+    "objectID": "essay.html",
+    "href": "essay.html",
+    "title": "Pledges Aren’t Payments: A Grant-Equivalent Look at Climate Finance",
+    "section": "",
+    "text": "Limitations & Uncertainties\nData coverage; instrument classification; FX/deflators; reporting lags; selection bias. See METHODS.md."
+  },
+  {
+    "objectID": "essay.html#why-this-matters",
+    "href": "essay.html#why-this-matters",
+    "title": "Pledges Aren’t Payments: A Grant-Equivalent Look at Climate Finance",
+    "section": "Why this matters",
+    "text": "Why this matters\nA short narrative hook goes here. Define “grant-equivalent” and the scope of this essay."
+  },
+  {
+    "objectID": "essay.html#data-methods",
+    "href": "essay.html#data-methods",
+    "title": "Pledges Aren’t Payments: A Grant-Equivalent Look at Climate Finance",
+    "section": "Data & Methods",
+    "text": "Data & Methods\n\nData sources and licenses\nGrant-equivalent mapping\nBase year and deflators\nReproduction steps are in the README. Full detail in METHODS.md."
+  },
+  {
+    "objectID": "essay.html#findings",
+    "href": "essay.html#findings",
+    "title": "Pledges Aren’t Payments: A Grant-Equivalent Look at Climate Finance",
+    "section": "Findings",
+    "text": "Findings\n\n\n\n\n\n\nTip\n\n\n\nOne idea per chart. Captions must carry the claim.\n\n\n\n\nCode\n# Demo placeholder. Replace with real data.\nimport pandas as pd, numpy as np, matplotlib.pyplot as plt\nyears = np.arange(2015, 2025)\npledges = np.linspace(10, 60, len(years))\ndisb = pledges * np.linspace(0.3, 0.8, len(years))\nplt.plot(years, pledges, label=\"Pledges\")\nplt.plot(years, disb, label=\"Disbursements (grant-equivalent)\")\nplt.legend()\nplt.xlabel(\"Year\"); plt.ylabel(\"USD (bn)\")\nplt.tight_layout()\nplt.show()\n\n\n\n\n\n\n\n\nFigure 1: Pledges vs. disbursements over time: the gap and the lag."
+  },
+  {
+    "objectID": "essay.html#what-it-means",
+    "href": "essay.html#what-it-means",
+    "title": "Pledges Aren’t Payments: A Grant-Equivalent Look at Climate Finance",
+    "section": "What it means",
+    "text": "What it means\nImplications for credibility, pipeline planning, and monitoring.\nReproduce this analysis by running make reproduce."
+  },
+  {
+    "objectID": "METHODS.html",
+    "href": "METHODS.html",
+    "title": "Methods",
+    "section": "",
+    "text": "List source tables and licenses\nRetrieval dates; version tags; DOIs (if any)\n\n\n\n\n\nCleaning steps; instrument mapping (if applicable)\nFX/deflators and base-year\nFile-level checksums (optional)\n\n\n\n\n\nAggregations; uncertainty handling\nFigure-generation scripts and parameters\n\n\n\n\n\nenv/requirements.txt with exact versions\nDeterministic seeds; pinned package versions\nEnd-to-end command: make reproduce"
+  },
+  {
+    "objectID": "METHODS.html#data-provenance",
+    "href": "METHODS.html#data-provenance",
+    "title": "Methods",
+    "section": "",
+    "text": "List source tables and licenses\nRetrieval dates; version tags; DOIs (if any)"
+  },
+  {
+    "objectID": "METHODS.html#transformations",
+    "href": "METHODS.html#transformations",
+    "title": "Methods",
+    "section": "",
+    "text": "Cleaning steps; instrument mapping (if applicable)\nFX/deflators and base-year\nFile-level checksums (optional)"
+  },
+  {
+    "objectID": "METHODS.html#analysis",
+    "href": "METHODS.html#analysis",
+    "title": "Methods",
+    "section": "",
+    "text": "Aggregations; uncertainty handling\nFigure-generation scripts and parameters"
+  },
+  {
+    "objectID": "METHODS.html#reproducibility",
+    "href": "METHODS.html#reproducibility",
+    "title": "Methods",
+    "section": "",
+    "text": "env/requirements.txt with exact versions\nDeterministic seeds; pinned package versions\nEnd-to-end command: make reproduce"
+  }
+]
