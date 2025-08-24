@@ -1,0 +1,12 @@
+{
+  "hash": "be830f90f192f10e96e78f1991a442b6",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"Pledges Aren't Payments: A Grant-Equivalent Look at Climate Finance\"\nauthor: \"Israel Fulton\"\ndescription: \"A reproducible data essay from Limiting Factors.\"\ncategories: [climate-finance, methods]\nformat:\n  html:\n    code-fold: true\n---\n\n> **Limitations & Uncertainties**  \n> Data coverage; instrument classification; FX/deflators; reporting lags; selection bias. See `METHODS.md`.\n\n## Why this matters\nA short narrative hook goes here. Define \"grant-equivalent\" and the scope of this essay.\n\n## Data & Methods\n- Data sources and licenses\n- Grant-equivalent mapping\n- Base year and deflators\n- Reproduction steps are in the README. Full detail in `METHODS.md`.\n\n## Findings\n::: {.callout-tip}\n**One idea per chart.** Captions must carry the claim.\n:::\n\n::: {#cell-fig-gap-over-time .cell execution_count=1}\n``` {.python .cell-code}\n# Demo placeholder. Replace with real data.\nimport pandas as pd, numpy as np, matplotlib.pyplot as plt\nyears = np.arange(2015, 2025)\npledges = np.linspace(10, 60, len(years))\ndisb = pledges * np.linspace(0.3, 0.8, len(years))\nplt.plot(years, pledges, label=\"Pledges\")\nplt.plot(years, disb, label=\"Disbursements (grant-equivalent)\")\nplt.legend()\nplt.xlabel(\"Year\"); plt.ylabel(\"USD (bn)\")\nplt.tight_layout()\nplt.show()\n```\n\n::: {.cell-output .cell-output-display}\n![Pledges vs. disbursements over time: the gap and the lag.](essay_files/figure-html/fig-gap-over-time-output-1.png){#fig-gap-over-time width=662 height=470}\n:::\n:::\n\n\n## What it means\nImplications for credibility, pipeline planning, and monitoring.\n\n*Reproduce this analysis by running `make reproduce`.*\n\n",
+    "supporting": [
+      "essay_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

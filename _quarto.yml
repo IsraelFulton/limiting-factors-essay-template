@@ -1,0 +1,10 @@
+project:
+  type: website
+  output-dir: _site
+format:
+  html:
+    toc: true
+    code-fold: false
+    df-print: paged
+execute:
+  freeze: auto

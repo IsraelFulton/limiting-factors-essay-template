@@ -1,0 +1,47 @@
+---
+title: "Pledges Aren't Payments: A Grant-Equivalent Look at Climate Finance"
+author: "Israel Fulton"
+description: "A reproducible data essay from Limiting Factors."
+categories: [climate-finance, methods]
+format:
+  html:
+    code-fold: true
+---
+
+> **Limitations & Uncertainties**  
+> Data coverage; instrument classification; FX/deflators; reporting lags; selection bias. See `METHODS.md`.
+
+## Why this matters
+A short narrative hook goes here. Define "grant-equivalent" and the scope of this essay.
+
+## Data & Methods
+- Data sources and licenses
+- Grant-equivalent mapping
+- Base year and deflators
+- Reproduction steps are in the README. Full detail in `METHODS.md`.
+
+## Findings
+::: {.callout-tip}
+**One idea per chart.** Captions must carry the claim.
+:::
+
+```{python}
+#| label: fig-gap-over-time
+#| fig-cap: "Pledges vs. disbursements over time: the gap and the lag."
+# Demo placeholder. Replace with real data.
+import pandas as pd, numpy as np, matplotlib.pyplot as plt
+years = np.arange(2015, 2025)
+pledges = np.linspace(10, 60, len(years))
+disb = pledges * np.linspace(0.3, 0.8, len(years))
+plt.plot(years, pledges, label="Pledges")
+plt.plot(years, disb, label="Disbursements (grant-equivalent)")
+plt.legend()
+plt.xlabel("Year"); plt.ylabel("USD (bn)")
+plt.tight_layout()
+plt.show()
+```
+
+## What it means
+Implications for credibility, pipeline planning, and monitoring.
+
+*Reproduce this analysis by running `make reproduce`.*

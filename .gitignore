@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.Rproj.user/
+
+# Quarto/Build
+_site/
+.quarto/
+*.html
+
+# Data
+data/processed/*
+!data/processed/.gitkeep
+
+# Figures
+figures/*
+!figures/.gitkeep
+
+/.quarto/

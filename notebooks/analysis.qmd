@@ -1,0 +1,9 @@
+---
+title: "Analysis Notebook"
+format: html
+---
+
+```{python}
+import pandas as pd
+print("Load, transform, analyze — then write outputs to ./figures and ./data/processed.")
+```
