@@ -1,6 +1,6 @@
 # Limiting Factors — Essay Template
 
-A reproducible, citable data-essay scaffold for the *Limiting Factors* series.
+A reproducible, citable data-essay scaffold for *Limiting Factors*.
 
 ## Quickstart
 
